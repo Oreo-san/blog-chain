@@ -73,14 +73,14 @@ export default class Profile extends Component {
                     <textarea
                       className="input-status"
                       value={this.state.newStatus}
-                      onChange={this.handleNewStatusChange}
+                      onChange={this.handleNewStatusChange.bind(this)}
                       placeholder="What's on your mind?"
                     />
                   </div>
                   <div className="col-md-12 text-right">
                     <button
                       className="btn btn-primary btn-lg"
-                      onClick={this.handleNewStatusSubmit}
+                      onClick={this.handleNewStatusSubmit.bind(this)}
                     >
                       Submit
                     </button>
